@@ -87,7 +87,7 @@ p {
     background: radial-gradient(steelblue, #113946); /* #052d3b */
     width: 100%;
     height: auto;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
 }
 
 .button-exp {
@@ -113,6 +113,8 @@ main {
     margin: 30px 100px 160px;
     align-items: center;
     justify-self: center;
+
+   
 }
 
 
