@@ -188,6 +188,7 @@ p {
 .header {
   /*  background: radial-gradient(steelblue, #113946); /* #052d3b */
     background: radial-gradient(steelblue, #113946); /* #052d3b */
+    width: 100%;
 }
 
 .button-exp {
@@ -205,19 +206,6 @@ p {
     background: #c70958;
 }
 
-
-@media only screen and(max-width:700px){
-    main {
-    grid-template-columns: 1fr;
-    display: grid;
-    width: 80%;
-    margin: 0 100px;
-    align-items: center;
-    justify-self: center;
-
-}
-
-}
 
 main {
     grid-template-columns: 1fr 1fr;
@@ -255,6 +243,37 @@ main {
 }
 
 
+
+
+@media only screen and(max-width:700px){
+    .nav-bar nav nav a{
+        display: none;
+    }
+}
+
+@media only screen and(max-width:700px){
+    main {
+    grid-template-columns: 1fr;
+    display: grid;
+    width: 80%;
+    margin: 0 100px;
+    align-items: center;
+    justify-self: center;
+
+}
+
+}
+@media only screen and(max-width:700px){
+   main .main-items {
+        display: grid;
+        max-width: 200px;
+        height: auto;
+        padding: 20px 20px;
+        margin: 2px 0;
+   
+}
+
+}
 
 .listProduct-item img{
     width: 100%;
