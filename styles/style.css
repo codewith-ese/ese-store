@@ -126,13 +126,13 @@ p {
 .welcome-items {
     flex-basis: 50%;
     min-width: 300px;
-    padding: 30px;
-    border: 10px solid black;
+    padding: 6px;
+   
    
 }
 
 .welcome-items img{
-    max-width: 600px;
+    max-width: 400px;
     padding: 0;
     filter: drop-shadow(0 50px 20px #0009);
 }
