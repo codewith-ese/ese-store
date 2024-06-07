@@ -214,7 +214,7 @@ p {
 .listProduct-item h2{
     font-weight: 500;
     font-size: large;
-    color: steelblue; 
+    color: #555; 
 }
 .listProduct-item .price{
     letter-spacing: 5px;
