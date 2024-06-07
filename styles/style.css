@@ -127,18 +127,19 @@ p {
     flex-basis: 50%;
     min-width: 300px;
     padding: 30px;
+    border: 10px solid black;
    
 }
 
 .welcome-items img{
-    max-width: 100%;
-    padding: 50px 0;
+    max-width: 600px;
+    padding: 0;
     filter: drop-shadow(0 50px 20px #0009);
 }
 
 .welcome-items h1{
     font-size: 50px;
-    line-height: 60px;
+    line-height: 40px;
     margin: 25px 0;
 
 }
@@ -158,9 +159,9 @@ p {
 @media only screen and(max-width:700px){
     .welcome-class{
         grid-template-columns: 100%;
-        width: 100%;
-        display: grid;
-        grid-gap: 10px;
+        width: fit-content;
+        display: flex;
+        grid-gap: 2px;
         margin: auto;
         margin-bottom: 20px; 
     }
@@ -175,8 +176,9 @@ p {
     }
     .welcome-items img{
         width: 100%;
-        padding: 0 5px 10px 0;
-        margin: 20px;
+        padding:0;
+        margin: 0;
+        align-items: center;
     }
 
 
@@ -194,14 +196,13 @@ p {
 .listProduct-item img{
     width: 100%;
     filter: drop-shadow(0 50px 20px #0009);
-    height: 280px;
+    height: 340px;
 }
 .listProduct{
-    max-width: 900px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin: auto;
+    margin: 10px;
     margin-bottom: 20px;
 }
 
@@ -233,14 +234,14 @@ p {
     border-radius: 20px;
 }
 
-aside {
+main{
     max-width: 1200px;
     padding: 0;
     margin: auto;
     display: grid;
 }
 
-aside h2{
+main h2{
     text-align: center;
     padding: auto;
     margin: 20px 0;
@@ -249,11 +250,6 @@ aside h2{
 
 
 @media only screen and (max-width:700px) {
-    aside {
-        width: 100%;
-        margin: 0;
-    }
-    
     .listProduct-item img{
         width: 100%;
         filter: drop-shadow(0 50px 20px #0009);
@@ -263,30 +259,23 @@ aside h2{
 }
 
 @media only screen and (max-width:700px){
+
     .listProduct{
         grid-template-columns: 100%;
-        max-width: 100%;
+        width: auto;
         display: grid;
-        grid-gap: 10px;
+        grid-gap: 20px;
         margin: auto;
-        margin-bottom: 20px;
-    }
-    .listProduct{
-        grid-template-columns: 100%;
-        max-width: 100%;
-        display: grid;
-        grid-gap: 10px;
-        margin: auto;
-        margin-bottom: 20px;
+        padding: 30px;
+        margin-bottom: 10px;
+    
     }
     .listProduct-item{
         display: grid;
-        grid-template-rows: 100%;
-       /* width: 100%; */
         background-color: #EEEEE6;
         padding: 10px;
         border-radius: 10px;
-        height: auto;
+        height: 500px;
     }
     .listProduct-item h2{
         font-weight: 500;
