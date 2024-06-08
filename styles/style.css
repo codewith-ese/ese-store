@@ -47,8 +47,10 @@ nav a {
 }
 
 h1 {
-    color: wheat;
+    color: #fff;
     font-family: "Abril Fatface", serif;
+    word-spacing: 1rem;
+    letter-spacing: 2px;
 }
 
 h2 {
@@ -74,8 +76,7 @@ p {
 
 
 .header {
-  /*  background: radial-gradient(steelblue, #113946); /* #052d3b */
-    background: radial-gradient(rgb(17, 83, 148), #0c0c0c); /* #052d3b */
+    background: radial-gradient(rgb(17, 83, 148), #0c0c0c); 
     max-width: 1200px;
     height: auto;
     padding-bottom: 120px;
@@ -99,20 +100,38 @@ p {
 }
 
 
+/*.hero {
+    position: relative;
+    padding-top: 10px;
+    padding: 0 0 10px 0;
+     
+}   */
+
+#welcome-background{ 
+   /* background-color: rgba(10, 10, 10, 0.906); */
+    background-color: rgb(7, 66, 114);
+    border-radius: 30px;
+
+} 
+
 
 .welcome-class {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-image: url("/images/background-ese-store.jpeg");
+    background-repeat: repeat-y;
+    background-position: right top;
+    background-attachment: scroll;
+    padding: 20px;
 
 }
-
 
 .welcome-items {
     flex-basis: 50%;
     min-width: 300px;
-    padding: 6px;
+    padding: 6px 50px; 
    
    
 }
@@ -121,12 +140,13 @@ p {
     max-width: 400px;
     padding: 0;
     filter: drop-shadow(0 50px 20px #0009);
+ 
 }
 
 .welcome-items h1{
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 30px 0;
 
 }
 
@@ -148,7 +168,7 @@ p {
         width: fit-content;
         display: flex;
         grid-gap: 2px;
-        margin: auto;
+        margin: 0;
         margin-bottom: 20px; 
     }
 
@@ -158,6 +178,7 @@ p {
     .welcome-items {
         padding: 0;
         height: auto;
+        flex-basis: 100%;
         width: 100%;
     }
     .welcome-items img{
@@ -171,12 +192,11 @@ p {
 }
 @media only screen and(max-width:700px){
     .welcome-items h1{
-        font-size: 25px;
-        width: 300px;
-        padding: 0 50px;
+        font-size: 20px;
+        width: fit-content;
+        padding: 0 2px;
     }
 }
-
 
 .listProduct-item img{
     width: 100%;
