@@ -109,8 +109,10 @@ p {
 
 #welcome-background{ 
    /* background-color: rgba(10, 10, 10, 0.906); */
-    background-color: rgb(7, 66, 114);
+    /*background-color: rgb(7, 66, 114); */
     border-radius: 30px;
+    background: radial-gradient(rgb(7, 66, 114), #0c0c0c); 
+    filter: drop-shadow(0 50px 20px rgba(4, 3, 5, 0.82));
 
 } 
 
@@ -120,7 +122,7 @@ p {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: url("/images/background-ese-store.jpeg");
+    background-image: url("../images/background-ese-store.jpeg");
     background-repeat: repeat-y;
     background-position: right top;
     background-attachment: scroll;
