@@ -217,24 +217,18 @@ p {
 .listProduct-item img{
     width: 100%;
     filter: drop-shadow(0 50px 20px #0009);
-    height: 340px;
+    height: 300px;
+    border-radius: 0 30px;
 }
 .listProduct{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 50px;
     margin: auto;
     margin-bottom: 10px;
-    width: 800px;
+    width: 700px;
     height: auto;
 
-
-  /*  max-width: 900px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin: 20px auto;
-    margin-bottom: 20px; */
 }
 
 .listProduct-item{
@@ -242,6 +236,7 @@ p {
     padding: 5px;
     border-radius: 10px;
     height: 440px;
+  
 }
 .listProduct-item h2{
     font-weight: 500;
